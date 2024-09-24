@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday My Love</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Landing Page / Welcome Section -->
+    <section id="landing" class="landing-section" style="background-image: linear-gradient(#FF6692, #A86BB9);">
+        <h1>Happy Birthday, Ritej Mabrouk</h1>
+        <p>To the love of my life, on this special day...</p>
+        <button onclick="scrollToSection('messages')" style="height: 35px; ">Explore</button>
+    </section>
+
+    <!-- Personalized Messages Section -->
+    <section id="messages" class="messages-section">
+        <h2>Special Messages</h2>
+        <div class="messages-container">
+            <!-- Left side with messages -->
+            <div class="messages-left">
+                <div class="message">
+                    <p>I remember the first time I saw you...</p>
+                </div>
+                <div class="message">
+                    <p>You’ve changed my world in ways I never imagined...</p>
+                </div>
+                <div class="message">
+                    <p>I love you more every day. Happy Birthday, my forever love!</p>
+                </div>
+            </div>
+
+
+    
+            <!-- Right side with GIF -->
+            <div class="messages-right">
+                <img src="ilove.gif" alt="Romantic GIF" class="gif-image" width="300" height="200">
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Slideshow of Special Moments -->
+    <section id="slideshow" class="slideshow-section">
+        <h2>Our Special Moments</h2>
+
+
+        <div class="slideshow-container">
+            <div class="slideshow-text">
+                <p>Our first trip together</p>
+                <p>The days I knew I loved you</p>
+            </div>
+            
+            <div class="slideshow-images">
+                <!-- Slides -->
+                <div class="slide fade">
+                    <img src="img.jpeg" alt="Special Moment 1" width="300" height="300">
+                </div>
+                <div class="slide fade">
+                    <img src="img1.jpeg" alt="Special Moment 2" width="300" height="300">
+                </div>
+                <div class="slide fade">
+                    <img src="img2.jpeg" alt="Special Moment 3" width="300" height="300">
+                </div>
+                <div class="slide fade">
+                    <img src="img3.jpeg" alt="Special Moment 4" width="300" height="300">
+                </div>
+                <!-- Add more slides as needed -->
+                <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+                <button class="next" onclick="plusSlides(1)">&#10095;</button>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Our Story in Numbers Section -->
+    <section id="numbers" class="numbers-section">
+        <h2>Our Story in Numbers</h2>
+        <div class="number">
+            <p>We’ve been together for <span id="daysTogether">55</span> days</p>
+        </div>
+        <div class="number">
+            <p>We’ve shared an <span id="laughsCount">infinite  </span>of laughs</p>
+        </div>
+        <div class="number">
+            <p>I have fallen in love with you   <span id="loveCount">innumerable</span> times a day</p>
+        </div>
+    </section>
+
+    <!-- Special Wish Section -->
+    <section id="wish" class="wish-section">
+        <h2>A Special Wish for You</h2>
+        <p>Here's to many more birthdays, and a lifetime of love and happiness together. You are my everything!</p>
+        <button onclick="revealSurprise()">Click for a surprise!</button>
+        
+        <div id="surprise" class="surprise hidden">
+            <p>Surprise! Watch this video I made just for you!</p>
+            <!-- Embed YouTube video -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/4NYjAvQNtsI?si=E8pkySHPo-ectRoS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        </div>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer>
+        <p>With all my love, Adham Naiji</p>
+    </footer>
+</body>
+</html>
